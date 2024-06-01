@@ -1,0 +1,699 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins,sans-serif,arial;
+	outline: none;
+	text-decoration: none;
+	border:none;
+	transition: all 0.2s linear;
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	background: #f7efe6;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+}
+
+.Header{
+	position: fixed;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	background: #222;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	padding: 5rem 3rem;
+	z-index: 1000;
+}
+
+.Header nav{
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.Header ul{
+	position: relative;
+	width: 100%;
+}
+
+.Header li{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 10px 5px;
+}
+
+.Header li a{
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+	font-size: 19px;
+}
+
+.Header li a span{
+	color: #de8a10;
+}
+
+
+.Header li a:hover{
+	letter-spacing: 3px;
+	color: #de8a10;
+
+}
+
+.Header-title{
+	font-size: 2em;
+	font-weight: 800;
+	text-decoration: none;
+	color: #fff;
+}
+
+.Header-title span{
+	color: #de8a10;
+}
+
+
+.Social-link{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.Social-link a{
+	display: inline-block;
+	padding: 8px;
+	font-size: 1.5em;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.Social-link a:hover{
+	color: #de8a10;
+}
+
+.main{
+	position: absolute;
+	top: 0;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.main .Profile{
+	flex: 1 1 30rem;
+}
+
+.main .Profile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.Content{
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	padding: 1rem 5%;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.Content div{
+	margin-bottom: 5px;
+}
+
+.Introduction{
+	flex: 1 1 30rem;
+}
+
+.Introduction div{
+	margin-bottom: 8px;
+}
+
+.Introduction .Greet p{
+	color: #de8a10;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.Introduction .Text-name p{
+	font-size: 3em;
+	font-weight: 600;
+	color: #de8a10;
+}
+
+.Introduction .Text-name p span{
+	color: #000;
+	margin-right: 10px;
+}
+
+.Introduction .Job-description p{
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.Introduction .Description p{
+	color: #4a4a4a;
+}
+
+.Description{
+	flex: 1;
+}
+
+.About-me .About-me-button{
+	background: #de8a10;
+	color: #fff;
+	padding: 10px 35px;
+	border:none;
+	transition: 0.5s;
+}
+
+.About-me .About-me-button:hover{
+	padding: 10px 40px;
+	color: #fff;
+	background: #282928;
+	letter-spacing: 3px;
+}
+
+.About-me{
+	margin-top: 1.5rem;
+}
+
+
+.Header-text h3{
+	font-size: 2.5em;
+	font-weight: 600;
+	color: #de8a10;
+	margin-bottom: 10px;
+}
+
+.Header-text h3 span{
+	color: #000;
+	margin-right: 10px;
+}
+
+.About-me-content .My-Profile .left{
+	flex: 1 1 30rem;
+}
+
+.About-me-content .My-Profile .left img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0.5px 0.1px 15px 5px rgba(0, 0, 0,0.1); 
+	border-radius: 0.3rem;
+	border:10px solid #fff;
+	overflow: hidden;
+}
+
+.About-me-content{
+	position: relative;
+	left: 0;
+	top: 0px;
+	padding: 1rem 5%;
+	padding-bottom: 1rem;
+}
+
+.My-Profile{
+	position: relative;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.right{
+	flex: 1 1 30rem;
+}
+
+.right div{
+	padding-bottom: 5px;
+}
+
+.Information{
+	position: relative;
+	top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Information span{
+	margin-right: 5px;
+	color: #e38528;
+}
+
+.Information p{
+	color: #666;
+}
+
+.My-skills-grid p,
+.Desc-introduction{
+	color: #666;
+}
+
+.left-info div,.right-info div{
+	margin-bottom: 5px;
+}
+
+.left-info{
+	flex: 1 1 10rem;
+}
+
+.right-info{
+	font-size: 1 1 10rem;
+}
+
+.Header-name p{
+	font-size: 2.2em;
+	font-weight: 600;
+}
+
+.Download-cv{
+	display: inline-block;
+}
+
+.Download-cv .Hire-me-button,
+.Download-cv .Download-cv-button{
+	background: #de8a10;
+	border: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 8px 25px;
+	outline: none;
+	transition: 0.5s;
+	margin-top: 1rem;
+	display: inline-block;
+
+}
+
+.Download-cv .Hire-me-button:hover,
+.Download-cv .Download-cv-button:hover{
+	color: #fff;
+	letter-spacing: 2px;
+	background: #000;
+}
+
+.My-skills{
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 1rem 5%;
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+
+.My-skills-content{
+	position: relative;
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+
+}
+
+.My-skills-right .My-skills-grid{
+	position: relative;
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+}
+
+.My-skills-right .My-skills-grid div{
+	background: #fff;
+	border:none;
+	padding: 1.5rem;
+	border-radius: 0.4rem;
+	box-shadow: 0.1rem 0.1rem .7rem 0.2rem rgba(0, 0, 0, 10%);
+	flex: 1 1 10rem;
+}
+
+.My-skills-right{
+	flex: 1 1 20rem;
+}
+
+.My-skills-left div{
+	margin: 0 0 30px;
+	width: 100%;
+}
+
+.My-skills-left p{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 0.5rem;
+	font-weight: 400;
+}
+
+.My-skills-left .progress-bar{
+	width: 100%;
+	background-color:#ccc;
+	height: 0.7rem;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.My-skills-left{
+	flex: 1 1 20rem;
+}
+
+.My-skills-left .progress-bar span{
+	background:  #de8a10;
+	height: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.My-skills-left div:nth-child(1) .progress-bar span{
+	width: 95%;
+}
+.My-skills-left div:nth-child(2) .progress-bar span{
+	width: 80%;
+}
+.My-skills-left div:nth-child(3) .progress-bar span{
+	width: 75%;
+}
+.My-skills-left div:nth-child(4) .progress-bar span{
+	width: 85%;
+}
+
+.My-skills-right h1{
+	color: #de8a10;
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+.My-services{
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 1rem 5%;
+	padding-top: 0;
+	min-height: 100vh;
+}
+
+.My-services-content{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+
+.My-services-content div{ 
+	text-align: center;
+	padding: 1.5rem;
+	background: #fff;
+	flex: 1 1 20rem;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 /10%);
+}
+
+.My-services-content div i{
+	color: #fff;
+	background: #de8a10;
+	font-size: 1.5rem;
+	border-radius: 50%;
+	width: 3.5rem;
+	height: 3.5rem;
+	display: inline-block;
+	line-height: 2.5;
+}
+
+.My-services-content div h3{
+	padding: .6rem 0 0;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.My-services-content div p{
+	padding: 0.6rem 0 0;
+	color: #666;
+	font-size: 1rem;
+}
+
+.My-experience{
+	position: relative;
+	padding: 1rem 5%;
+	padding-top: 0;
+	min-height: 100vh;
+}
+
+.My-experience-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.My-experience-content .box{
+	position: relative;
+	border-left: 0.15rem solid #de8a10;
+	flex: 1 1 20rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.My-experience-content .box::before{
+	content: '';
+	background: #de8a10;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: -.75rem;
+	height: 1.3rem;
+	width: 1.3rem;
+}
+
+.My-experience-content .box div{
+	background: #fff;
+	padding: 1rem;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 /8%);
+}
+
+.My-experience-content .box div span{
+	background: #de8a10;
+	color: #fff;
+	padding: 0.1rem .8rem;
+	border-radius: 1rem;
+	letter-spacing: 1px;
+}
+
+.My-experience-content .box div h3{
+	font-size: 1.4rem;
+	padding: 0.5rem 0;
+}
+
+.My-experience-content .box div p{
+	color: #666;
+}
+
+.My-portfolio{
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 1rem 5%;
+	min-height: 100vh;
+}
+
+.My-portfolio-content{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.My-portfolio-content .Cards{
+	position: relative;
+	flex: 1 1 20rem;
+	background: #fff;
+	border: 0.5rem solid #fff;
+	overflow: hidden;
+	height: 15rem;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
+}
+
+.My-portfolio-content img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	z-index: 1;
+	object-fit: cover;
+}
+
+.My-portfolio-content .box-link{
+	position: absolute;
+	top: 0;
+	right: 0.5rem;
+}
+
+.My-portfolio-content .box-link a{
+	display: block;
+	background: #eee;
+	color: #111;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-bottom: 10px;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: 2.6rem;
+}
+
+.My-portfolio-content div h3{
+	position: absolute;
+	left: 0.5rem;
+	bottom: 0.5rem;
+	font-size: 1.5rem;
+	color:#333;
+}
+
+.My-portfolio-content div:hover img{
+	width: 75%;
+	height: 75%;
+
+}
+
+.My-portfolio-content a:hover{
+	background: #de8a10;
+	color: #fff;
+}
+
+.My-portfolio-content a i{
+	transition: 0s;
+}
+
+.Contact-me{
+	position: relative;
+	padding: 1rem 5%;
+	padding-top: 0;
+	min-height: 70vh;
+}
+
+.Contact-me-content{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.Contact-me-content div{
+	background: #fff;
+	text-align: center;
+	padding: 2.5rem;
+	flex: 1 1 25rem;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 /10%);
+}
+
+.Contact-me-content div i{
+	background: #de8a10;
+	color: #fff;
+	width: 3.5rem;
+	height: 3.5rem;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 2.8;
+	font-size: 1.3rem;
+}
+
+.Contact-me-content div  h3{
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding-top: 0.8rem;
+	padding: 0.5rem 0;
+}
+
+.Contact-me-content div p{
+	color: #666;
+}
+
+.Footer{
+	background: #fff;
+	padding: 1.5rem;
+}
+
+.Footer .Footer-content{
+	text-align: center;
+}
+
+.Footer .Footer-content p{
+	font-size: 1.2rem;
+	color: #666;
+}
+
+#menu-bars{
+	z-index: 100000;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	background:#de8a10;
+	color: #fff;
+	padding: 0rem .6rem;
+	font-size: 2rem;
+	border-radius: .5rem;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width:1191px){
+	#menu-bars{
+		display: initial;
+	}
+
+	html{
+		font-size: 75%;
+	}
+
+	.Header{
+		left: -120%;
+	}
+
+	body{
+		padding: 0;
+	}
+
+	.main{
+		left: 0;
+		width: 100%;
+
+	}
+
+	.Header.active{
+		left: 0%;
+	}
+}
+
+@media (max-width:450px){
+
+	html{
+		font-size: 75%;
+	}
+
+    .Header{
+        width:100%;
+    }
+
+    .My-experience-content .box{
+    	padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
